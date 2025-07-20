@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Balencienciaga Times</title>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+
+  <style>
+    /* Tailwind Core (partial, relevant to your layout) */
+    *, ::before, ::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      line-height: 1.5;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Custom Fonts */
+    .unifrakturcook-bold {
+      font-family: 'UnifrakturCook', serif;
+      font-weight: 700;
+    }
+
+    .montserrat {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .dm-serif {
+      font-family: 'DM Serif Text', serif;
+    }
+
+    /* Tailwind Utility Equivalents */
+    .w-full { width: 100%; }
+    .w-96 { width: 24rem; }
+    .h-12 { height: 3rem; }
+    .h-2 { height: 0.5rem; }
+    .h-screen { height: 100vh; }
+
+    .flex { display: flex; }
+    .flex-col { flex-direction: column; }
+    .items-center { align-items: center; }
+    .justify-center { justify-content: center; }
+    .justify-between { justify-content: space-between; }
+
+    .gap-2 { gap: 0.5rem; }
+    .py-1 { padding-block: 0.25rem; }
+    .py-2 { padding-block: 0.5rem; }
+    .py-12 { padding-block: 3rem; }
+    .mb-4 { margin-bottom: 1rem; }
+    .mt-10 { margin-top: 2.5rem; }
+
+    .text-center { text-align: center; }
+    .text-xs { font-size: 0.75rem; }
+    .text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+    .text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
+
+    .font-bold { font-weight: 700; }
+    .font-medium { font-weight: 500; }
+
+    .text-red-500 { color: oklch(63.7% 0.237 25.331); }
+    .text-gray-400 { color: oklch(70.7% 0.022 261.325); }
+    .text-neutral-950\/30 { color: color-mix(in srgb, oklch(14.5% 0 0) 30%, transparent); }
+
+    .bg-red-500 { background-color: oklch(63.7% 0.237 25.331); }
+
+    .rounded-full { border-radius: 9999px; }
+
+    .border-b-2 {
+      border-bottom-width: 2px;
+      border-bottom-style: solid;
+    }
+
+    .border-neutral-950\/15 {
+      border-color: color-mix(in srgb, oklch(14.5% 0 0) 15%, transparent);
+    }
+
+    .absolute {
+      position: absolute;
+    }
+
+    @keyframes ping {
+      75%, 100% {
+        transform: scale(2);
+        opacity: 0;
+      }
+    }
+
+    .animate-ping {
+      animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+  </style>
+</head>
+
+<body class="bg-white">
+
+  <!-- Header -->
+  <a href="https://youtu.be/u2twp98P95I?si=7uQcobkPF18WpQmY" class="w-full h-12 border-b-2 border-neutral-950/15 flex items-center justify-center text-center text-3xl unifrakturcook-bold">
+    The Balencienciaga Times
+  </a>
+
+  <!-- Main Content -->
+  <main class="w-full h-screen items-center flex flex-col montserrat">
+    <div class="w-96 py-12">
+      <!-- Breaking Section -->
+      <div class="font-bold w-full text-red-500 flex items-center justify-between"> 
+        <div class="flex items-center gap-2">
+          <div class="w-2 h-2 rounded-full animate-ping bg-red-500"></div>
+          <div class="w-2 h-2 rounded-full bg-red-500 absolute"></div>
+          BREAKING
+        </div> 
+        <p class="text-xs font-medium">Updated 1 min. ago</p>
+      </div>
+
+      <!-- Article -->
+      <h1 class="dm-serif font-bold text-4xl py-1">Esmee Nurmi revealed to have a FAT crush on Cassi, friends and family are stunned.</h1>
+      <p class="py-2">Reports say that it is fatter than Hugh himself.</p>
+      
+      <img src="https://media.discordapp.net/attachments/841821480089944098/1396316799082954782/image.png?ex=687da4db&is=687c535b&hm=a1e9dc326457e6ff4c8c854a20230800ab33839439e14e2b6524d4d3b5f2e726&=&format=webp&quality=lossless&width=656&height=432" alt="">
+      <p class="text-xs text-neutral-950/30 mb-4">Esmee confessing herself that she likes Cassi</p>
+
+      <p class="mb-4">
+        In a quiet but closely-watched development among classmates, it has come to light that
+        <strong>Esmee Nurmi</strong>, 14, has a noticeable crush on her friend <strong>Cassi K</strong>.
+        The situation is made more complex by the fact that Esmee is openly lesbian, while Cassi has
+        identified as straight.
+      </p>
+
+      <p class="mb-4">
+        According to students who know both girls, Esmee’s feelings are genuine and respectful. While
+        she has not made any direct move, her friends say it’s “pretty clear” how she feels. Cassi,
+        meanwhile, is known to be very close with Esmee and sometimes behaves in ways that might come
+        off as flirtatious — though she has not expressed any romantic interest and continues to identify as straight.
+      </p>
+
+      <p class="mb-4">
+        This has led to some confusion for Esmee and their peers. “It’s just hard when someone acts
+        differently around you than they do with others,” one student said. “But that doesn’t mean
+        there’s bad intent — they’re both still figuring things out, like everyone else our age.”
+      </p>
+
+      <p class="mb-4">
+        Classmates agree that the friendship between Esmee and Cassi is strong, and there’s no sign of
+        tension. “They’re really close — and they care about each other. That’s what matters most,” said another student.
+      </p>
+
+      <p class="mb-4">
+        For now, it seems that both girls are navigating the situation with maturity and kindness — and
+        their peers are watching with quiet support, hoping the friendship remains strong no matter what.
+      </p>
+
+      <!-- Footer -->
+      <footer class="mt-10 text-xs text-gray-400 text-center">
+        &copy; 2025 Balencienciaga Hughbert The IInd's Newspaper, a.k.a. The Balencienciaga Times — All information presented is based on peer observation and has been handled with respect to those involved.
+      </footer>
+    </div>
+  </main>
+</body>
+</html>
